@@ -1,0 +1,36 @@
+{
+  "simlife-bot": {
+    "promptValues": {
+      "packageName": "eu.activageproject.datalake"
+    },
+    "simlifeVersion": "5.0.3",
+    "applicationType": "monolith",
+    "baseName": "DataIntergration",
+    "packageName": "eu.activageproject.datalake",
+    "packageFolder": "eu/activageproject/datalake",
+    "serverPort": "8025",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "cc684cd88b6fb24a75b533a7b20e0c9b5d7860c7",
+    "clientFramework": "angularX",
+    "useSass": false,
+    "clientPackageManager": "yarn",
+    "testFrameworks": [
+      "gatling",
+      "cucumber",
+      "protractor"
+    ],
+    "simPrefix": "sim",
+    "enableTranslation": false
+  }
+}
