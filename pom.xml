@@ -3,10 +3,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>eu.activageproject.datalake</groupId>
-    <artifactId>data-intergration</artifactId>
+    <artifactId>DL-Data_Indexing</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>Data Intergration</name>
+    <name>DL-Data_Indexing</name>
 
     <repositories>
         <!-- simlife-needle-maven-repository -->
