@@ -1,7 +1,7 @@
 version: '2'
 services:
     dataintergration-app:
-        image: dataintergration
+        image: dl-data-indexing
         environment:
             # - _JAVA_OPTIONS=-Xmx512m -Xms256m
             - SPRING_PROFILES_ACTIVE=prod,swagger
