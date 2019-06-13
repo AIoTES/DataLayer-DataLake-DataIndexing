@@ -32,11 +32,11 @@ spring:
         serialization.indent_output: true
     data:
         mongodb:
-            uri: mongodb://140.203.155.14:27017
+            uri: mongodb://localhost:27017
             database: activage-data-integration
         elasticsearch:
             cluster-name:  elasticsearch
-            cluster-nodes: 140.203.155.14:9300
+            cluster-nodes: localhost:9300
     mail:
         host: localhost
         port: 25
