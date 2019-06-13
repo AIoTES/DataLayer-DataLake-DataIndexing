@@ -68,7 +68,7 @@ public class DataIntegrationApp {
         } catch (Exception e) {
             log.warn("The host name could not be determined, using `localhost` as fallback");
         }
-        String contextPath = env.getProperty("server.servlet.contextPath");
+        String contextPath = env.getProperty("server.servlet.context-path");
         log.info("\n----------------------------------------------------------\n\t" +
                 "Application '{}' is running! Access URLs:\n\t" +
                 "Local: \t\t{}://localhost:{}{}\n\t" +
