@@ -20,9 +20,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.core.io.Resource;
 import javax.validation.Valid;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.URI;
 import java.net.URISyntaxException;
 
@@ -163,23 +160,8 @@ public class DataIndexResource {
 
     @GetMapping("/docs")
     @Timed
-    public String getApiDocs() {
-        try {
-            log.info("get api is:{} ", apiDocResource.getInputStream());
-            BufferedReader reader = new BufferedReader(new InputStreamReader(apiDocResource.getInputStream()));
-            StringBuilder stringBuilder = new StringBuilder();
-            String line;
-            while ((line = reader.readLine()) != null) {
-                stringBuilder.append(line).append('\n');
-            }
-            reader.close();
-
-            return stringBuilder.toString();
-
-        } catch (IOException ex) {
-            log.error("get api docs ex:" + ex.toString());
-            return null;
-        }
+    public Resource getApiDocs() {
+        return apiDocResource;
     }
 
 }
