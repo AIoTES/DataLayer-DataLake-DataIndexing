@@ -39,8 +39,8 @@ public class DataIndexResource {
 
     private final DataIndexService dataIndexService;
 
-    @Value(value = "classpath:apidocs.json")
-    private Resource apiDocResource;
+    @Value("#{systemProperties['dataIndexResource.apidocs'] ?: 'classpath:apidocs.json'}")
+    private Resource apiDocsResource;
 
     public DataIndexResource(DataIndexService dataIndexService) {
         this.dataIndexService = dataIndexService;
@@ -161,7 +161,7 @@ public class DataIndexResource {
     @GetMapping("/docs")
     @Timed
     public Resource getApiDocs() {
-        return apiDocResource;
+        return apiDocsResource;
     }
 
 }
