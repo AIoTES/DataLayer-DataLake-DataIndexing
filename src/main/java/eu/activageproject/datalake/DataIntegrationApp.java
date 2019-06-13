@@ -68,17 +68,20 @@ public class DataIntegrationApp {
         } catch (Exception e) {
             log.warn("The host name could not be determined, using `localhost` as fallback");
         }
+        String contextPath = env.getProperty("server.servlet.contextPath");
         log.info("\n----------------------------------------------------------\n\t" +
                 "Application '{}' is running! Access URLs:\n\t" +
-                "Local: \t\t{}://localhost:{}\n\t" +
-                "External: \t{}://{}:{}\n\t" +
+                "Local: \t\t{}://localhost:{}{}\n\t" +
+                "External: \t{}://{}:{}{}\n\t" +
                 "Profile(s): \t{}\n----------------------------------------------------------",
             env.getProperty("spring.application.name"),
             protocol,
             env.getProperty("server.port"),
+            contextPath != null ? contextPath : "",
             protocol,
             hostAddress,
             env.getProperty("server.port"),
+            contextPath != null ? contextPath : "",
             env.getActiveProfiles());
     }
 }
