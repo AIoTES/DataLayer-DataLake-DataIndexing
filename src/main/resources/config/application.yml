@@ -34,7 +34,7 @@ management:
 
 spring:
     application:
-        name: DataIntergration
+        name: DataIntegration
     profiles:
         # The commented value for `active` can be replaced with valid Spring profiles to load.
         # Otherwise, it will be filled in by maven when building the WAR file
@@ -79,11 +79,11 @@ simlife:
         allow-credentials: true
         max-age: 1800
     mail:
-        from: DataIntergration@localhost
+        from: DataIntegration@localhost
     swagger:
         default-include-pattern: /api/.*
-        title: DataIntergration API
-        description: DataIntergration API documentation
+        title: DataIntegration API
+        description: DataIntegration API documentation
         version: 0.0.1
         terms-of-service-url:
         contact-name:

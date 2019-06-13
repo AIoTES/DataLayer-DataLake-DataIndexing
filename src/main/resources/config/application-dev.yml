@@ -33,7 +33,7 @@ spring:
     data:
         mongodb:
             uri: mongodb://140.203.155.14:27017
-            database: activage-data-intergration
+            database: activage-data-integration
         elasticsearch:
             cluster-name:  elasticsearch
             cluster-nodes: 140.203.155.14:9300
@@ -49,7 +49,7 @@ spring:
 
 # ===================================================================
 # To enable SSL, generate a certificate using:
-# keytool -genkey -alias dataintergration -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650
+# keytool -genkey -alias dataintegration -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650
 #
 # You can also use Let's Encrypt:
 # https://maximilian-boehm.com/hp2121/Create-a-Java-Keystore-JKS-from-Let-s-Encrypt-Certificates.htm
@@ -62,7 +62,7 @@ spring:
 #        key-store: keystore.p12
 #        key-store-password: <your-password>
 #        key-store-type: PKCS12
-#        key-alias: dataintergration
+#        key-alias: dataintegration
 # ===================================================================
 server:
     port: 8025
@@ -92,7 +92,7 @@ simlife:
                 token-validity-in-seconds: 86400
                 token-validity-in-seconds-for-remember-me: 2592000
     mail: # specific Simlife mail property, for standard properties see MailProperties
-        from: DataIntergration@localhost
+        from: DataIntegration@localhost
         base-url: http://127.0.0.1:8080
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
         jmx:

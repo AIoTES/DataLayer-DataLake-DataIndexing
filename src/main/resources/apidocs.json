@@ -1,9 +1,9 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "Activage Data Intergration API documentation",
+        "description": "Activage Data Integration API documentation",
         "version": "0.0.1",
-        "title": "Activage Data Intergration API",
+        "title": "Activage Data Integration API",
         "contact": {},
         "license": {}
     },

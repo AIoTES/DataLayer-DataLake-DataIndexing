@@ -1,6 +1,6 @@
 package eu.activageproject.datalake.web.rest;
 
-import eu.activageproject.datalake.DataIntergrationApp;
+import eu.activageproject.datalake.DataIntegrationApp;
 import eu.activageproject.datalake.domain.User;
 import eu.activageproject.datalake.repository.UserRepository;
 import eu.activageproject.datalake.security.jwt.TokenProvider;
@@ -31,7 +31,7 @@ import static org.hamcrest.Matchers.not;
  * @see UserJWTController
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = DataIntergrationApp.class)
+@SpringBootTest(classes = DataIntegrationApp.class)
 public class UserJWTControllerIntTest {
 
     @Autowired

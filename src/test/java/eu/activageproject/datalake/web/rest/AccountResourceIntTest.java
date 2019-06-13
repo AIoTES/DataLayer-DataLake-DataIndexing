@@ -1,7 +1,7 @@
 package eu.activageproject.datalake.web.rest;
 
 import eu.activageproject.datalake.config.Constants;
-import eu.activageproject.datalake.DataIntergrationApp;
+import eu.activageproject.datalake.DataIntegrationApp;
 import eu.activageproject.datalake.domain.Authority;
 import eu.activageproject.datalake.domain.User;
 import eu.activageproject.datalake.repository.AuthorityRepository;
@@ -47,7 +47,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see AccountResource
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = DataIntergrationApp.class)
+@SpringBootTest(classes = DataIntegrationApp.class)
 public class AccountResourceIntTest {
 
     @Autowired

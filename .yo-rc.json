@@ -5,7 +5,7 @@
     },
     "simlifeVersion": "5.0.3",
     "applicationType": "monolith",
-    "baseName": "DataIntergration",
+    "baseName": "DataIntegration",
     "packageName": "eu.activageproject.datalake",
     "packageFolder": "eu/activageproject/datalake",
     "serverPort": "8025",

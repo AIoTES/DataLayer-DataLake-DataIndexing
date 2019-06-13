@@ -20,4 +20,4 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ],
     exports: [FormsModule, CommonModule, NgbModule, NgSimlifeModule, InfiniteScrollModule, FontAwesomeModule]
 })
-export class DataIntergrationSharedLibsModule {}
+export class DataIntegrationSharedLibsModule {}

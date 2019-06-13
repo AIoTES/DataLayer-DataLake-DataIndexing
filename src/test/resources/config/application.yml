@@ -16,12 +16,12 @@
 
 spring:
     application:
-        name: DataIntergration
+        name: DataIntegration
     data:
         mongodb:
             host: localhost
             port: 0
-            database: DataIntergration
+            database: DataIntegration
     mail:
         host: localhost
     messages:

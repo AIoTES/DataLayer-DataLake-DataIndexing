@@ -1,6 +1,6 @@
 package eu.activageproject.datalake.web.rest;
 
-import eu.activageproject.datalake.DataIntergrationApp;
+import eu.activageproject.datalake.DataIntegrationApp;
 
 import eu.activageproject.datalake.domain.DataIndex;
 import eu.activageproject.datalake.repository.DataIndexRepository;
@@ -41,7 +41,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see DataIndexResource
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = DataIntergrationApp.class)
+@SpringBootTest(classes = DataIntegrationApp.class)
 public class DataIndexResourceIntTest {
 
     private static final String DEFAULT_INDEX_ID = "AAAAAAAAAA";

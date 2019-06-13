@@ -1,9 +1,9 @@
 version: '2'
 services:
-    dataintergration-elasticsearch:
+    dataintegration-elasticsearch:
         image: elasticsearch:5.6.5
         volumes:
-            - ~/volumes/simlife/DataIntergration/elasticsearch/:/usr/share/elasticsearch/data/
+            - ~/volumes/simlife/DataIntegration/elasticsearch/:/usr/share/elasticsearch/data/
         ports:
             - 9200:9200
             - 9300:9300

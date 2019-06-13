@@ -1,6 +1,6 @@
 package eu.activageproject.datalake.repository;
 
-import eu.activageproject.datalake.DataIntergrationApp;
+import eu.activageproject.datalake.DataIntegrationApp;
 import eu.activageproject.datalake.config.Constants;
 import eu.activageproject.datalake.config.audit.AuditEventConverter;
 import eu.activageproject.datalake.domain.PersistentAuditEvent;
@@ -30,7 +30,7 @@ import static eu.activageproject.datalake.repository.CustomAuditEventRepository.
  * @see CustomAuditEventRepository
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = DataIntergrationApp.class)
+@SpringBootTest(classes = DataIntegrationApp.class)
 public class CustomAuditEventRepositoryIntTest {
 
     @Autowired

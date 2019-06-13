@@ -1,6 +1,6 @@
 package eu.activageproject.datalake.security;
 
-import eu.activageproject.datalake.DataIntergrationApp;
+import eu.activageproject.datalake.DataIntegrationApp;
 import eu.activageproject.datalake.domain.User;
 import eu.activageproject.datalake.repository.UserRepository;
 
@@ -24,7 +24,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * @see DomainUserDetailsService
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = DataIntergrationApp.class)
+@SpringBootTest(classes = DataIntegrationApp.class)
 public class DomainUserDetailsServiceIntTest {
 
     private static final String USER_ONE_LOGIN = "test-user-one";

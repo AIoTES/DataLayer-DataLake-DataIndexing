@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 
-import { DataIntergrationTestModule } from '../../../test.module';
+import { DataIntegrationTestModule } from '../../../test.module';
 import { SimHealthCheckComponent } from 'app/admin/health/health.component';
 import { SimHealthService } from 'app/admin/health/health.service';
 
@@ -13,7 +13,7 @@ describe('Component Tests', () => {
         beforeEach(
             async(() => {
                 TestBed.configureTestingModule({
-                    imports: [DataIntergrationTestModule],
+                    imports: [DataIntegrationTestModule],
                     declarations: [SimHealthCheckComponent]
                 })
                     .overrideTemplate(SimHealthCheckComponent, '')

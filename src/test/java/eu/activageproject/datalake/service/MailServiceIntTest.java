@@ -1,7 +1,7 @@
 package eu.activageproject.datalake.service;
 import eu.activageproject.datalake.config.Constants;
 
-import eu.activageproject.datalake.DataIntergrationApp;
+import eu.activageproject.datalake.DataIntegrationApp;
 import eu.activageproject.datalake.domain.User;
 import io.github.simlife.config.SimlifeProperties;
 import org.junit.Before;
@@ -30,7 +30,7 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = DataIntergrationApp.class)
+@SpringBootTest(classes = DataIntegrationApp.class)
 public class MailServiceIntTest {
 
     @Autowired

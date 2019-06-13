@@ -1,6 +1,6 @@
 package eu.activageproject.datalake.service;
 
-import eu.activageproject.datalake.DataIntergrationApp;
+import eu.activageproject.datalake.DataIntegrationApp;
 import eu.activageproject.datalake.config.Constants;
 import eu.activageproject.datalake.domain.User;
 import eu.activageproject.datalake.repository.search.UserSearchRepository;
@@ -33,7 +33,7 @@ import static org.mockito.Mockito.verify;
  * @see UserService
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = DataIntergrationApp.class)
+@SpringBootTest(classes = DataIntegrationApp.class)
 public class UserServiceIntTest {
 
     @Autowired

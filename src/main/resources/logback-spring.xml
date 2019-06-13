@@ -8,7 +8,7 @@
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>/var/log/service/activage-data-intergration.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>/var/log/service/activage-data-integration.%d{yyyy-MM-dd}.log</fileNamePattern>
             <maxHistory>90</maxHistory>
         </rollingPolicy>
         <encoder>

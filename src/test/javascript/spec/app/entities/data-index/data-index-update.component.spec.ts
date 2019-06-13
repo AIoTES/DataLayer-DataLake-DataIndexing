@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed, fakeAsync, tick } from '@angular/core/testin
 import { HttpResponse } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 
-import { DataIntergrationTestModule } from '../../../test.module';
+import { DataIntegrationTestModule } from '../../../test.module';
 import { DataIndexUpdateComponent } from 'app/entities/data-index/data-index-update.component';
 import { DataIndexService } from 'app/entities/data-index/data-index.service';
 import { DataIndex } from 'app/shared/model/data-index.model';
@@ -16,7 +16,7 @@ describe('Component Tests', () => {
 
         beforeEach(() => {
             TestBed.configureTestingModule({
-                imports: [DataIntergrationTestModule],
+                imports: [DataIntegrationTestModule],
                 declarations: [DataIndexUpdateComponent]
             })
                 .overrideTemplate(DataIndexUpdateComponent, '')

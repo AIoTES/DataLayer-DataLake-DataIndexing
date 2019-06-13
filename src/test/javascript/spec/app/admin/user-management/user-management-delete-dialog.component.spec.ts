@@ -3,7 +3,7 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { Observable, of } from 'rxjs';
 import { SimEventManager } from 'ng-simlife';
 
-import { DataIntergrationTestModule } from '../../../test.module';
+import { DataIntegrationTestModule } from '../../../test.module';
 import { UserMgmtDeleteDialogComponent } from 'app/admin/user-management/user-management-delete-dialog.component';
 import { UserService } from 'app/core';
 
@@ -18,7 +18,7 @@ describe('Component Tests', () => {
         beforeEach(
             async(() => {
                 TestBed.configureTestingModule({
-                    imports: [DataIntergrationTestModule],
+                    imports: [DataIntegrationTestModule],
                     declarations: [UserMgmtDeleteDialogComponent]
                 })
                     .overrideTemplate(UserMgmtDeleteDialogComponent, '')

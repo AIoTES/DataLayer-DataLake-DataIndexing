@@ -4,7 +4,7 @@ import { Observable, of } from 'rxjs';
 import { HttpHeaders, HttpResponse } from '@angular/common/http';
 import { ActivatedRoute, Data } from '@angular/router';
 
-import { DataIntergrationTestModule } from '../../../test.module';
+import { DataIntegrationTestModule } from '../../../test.module';
 import { DataIndexComponent } from 'app/entities/data-index/data-index.component';
 import { DataIndexService } from 'app/entities/data-index/data-index.service';
 import { DataIndex } from 'app/shared/model/data-index.model';
@@ -17,7 +17,7 @@ describe('Component Tests', () => {
 
         beforeEach(() => {
             TestBed.configureTestingModule({
-                imports: [DataIntergrationTestModule],
+                imports: [DataIntegrationTestModule],
                 declarations: [DataIndexComponent],
                 providers: [
                     {

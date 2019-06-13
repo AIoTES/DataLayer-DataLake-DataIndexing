@@ -3,14 +3,14 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "data-intergration": {
+    "data-integration": {
       "root": "",
       "sourceRoot": "src/main/webapp",
       "projectType": "application",
       "architect": {}
     }
   },
-  "defaultProject": "data-intergration",
+  "defaultProject": "data-integration",
   "cli": {
     "packageManager": "yarn"
   },

@@ -40,7 +40,7 @@ export class SimConfigurationService {
             }
         }
         // by default, use the default ApplicationContext Id
-        return res['contexts']['DataIntergration']['beans'];
+        return res['contexts']['DataIntegration']['beans'];
     }
 
     getEnv(): Observable<any> {

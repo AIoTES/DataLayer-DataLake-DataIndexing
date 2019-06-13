@@ -19,18 +19,18 @@ import java.util.Collection;
 
 @SpringBootApplication
 @EnableConfigurationProperties({ApplicationProperties.class})
-public class DataIntergrationApp {
+public class DataIntegrationApp {
 
-    private static final Logger log = LoggerFactory.getLogger(DataIntergrationApp.class);
+    private static final Logger log = LoggerFactory.getLogger(DataIntegrationApp.class);
 
     private final Environment env;
 
-    public DataIntergrationApp(Environment env) {
+    public DataIntegrationApp(Environment env) {
         this.env = env;
     }
 
     /**
-     * Initializes DataIntergration.
+     * Initializes DataIntegration.
      * <p>
      * Spring profiles can be configured with a program arguments --spring.profiles.active=your-active-profile
      * <p>
@@ -55,7 +55,7 @@ public class DataIntergrationApp {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        SpringApplication app = new SpringApplication(DataIntergrationApp.class);
+        SpringApplication app = new SpringApplication(DataIntegrationApp.class);
         DefaultProfileUtil.addDefaultProfile(app);
         Environment env = app.run(args).getEnvironment();
         String protocol = "http";

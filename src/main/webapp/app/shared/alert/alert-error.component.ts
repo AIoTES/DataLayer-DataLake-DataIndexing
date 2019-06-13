@@ -21,7 +21,7 @@ export class SimAlertErrorComponent implements OnDestroy {
         /* tslint:enable */
         this.alerts = [];
 
-        this.cleanHttpErrorListener = eventManager.subscribe('dataIntergrationApp.httpError', response => {
+        this.cleanHttpErrorListener = eventManager.subscribe('dataIntegrationApp.httpError', response => {
             let i;
             const httpErrorResponse = response.content;
             switch (httpErrorResponse.status) {

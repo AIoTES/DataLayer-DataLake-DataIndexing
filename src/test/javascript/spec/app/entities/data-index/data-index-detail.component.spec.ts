@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ActivatedRoute } from '@angular/router';
 import { of } from 'rxjs';
 
-import { DataIntergrationTestModule } from '../../../test.module';
+import { DataIntegrationTestModule } from '../../../test.module';
 import { DataIndexDetailComponent } from 'app/entities/data-index/data-index-detail.component';
 import { DataIndex } from 'app/shared/model/data-index.model';
 
@@ -15,7 +15,7 @@ describe('Component Tests', () => {
 
         beforeEach(() => {
             TestBed.configureTestingModule({
-                imports: [DataIntergrationTestModule],
+                imports: [DataIntegrationTestModule],
                 declarations: [DataIndexDetailComponent],
                 providers: [{ provide: ActivatedRoute, useValue: route }]
             })

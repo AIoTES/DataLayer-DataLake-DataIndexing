@@ -555,7 +555,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <repository>dataintergration</repository>
+                    <repository>dataintegration</repository>
                     <contextDirectory>${project.build.directory}</contextDirectory>
                 </configuration>
             </plugin>

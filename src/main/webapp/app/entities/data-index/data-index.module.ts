@@ -1,7 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { DataIntergrationSharedModule } from 'app/shared';
+import { DataIntegrationSharedModule } from 'app/shared';
 import {
     DataIndexComponent,
     DataIndexDetailComponent,
@@ -15,7 +15,7 @@ import {
 const ENTITY_STATES = [...dataIndexRoute, ...dataIndexPopupRoute];
 
 @NgModule({
-    imports: [DataIntergrationSharedModule, RouterModule.forChild(ENTITY_STATES)],
+    imports: [DataIntegrationSharedModule, RouterModule.forChild(ENTITY_STATES)],
     declarations: [
         DataIndexComponent,
         DataIndexDetailComponent,
@@ -26,4 +26,4 @@ const ENTITY_STATES = [...dataIndexRoute, ...dataIndexPopupRoute];
     entryComponents: [DataIndexComponent, DataIndexUpdateComponent, DataIndexDeleteDialogComponent, DataIndexDeletePopupComponent],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class DataIntergrationDataIndexModule {}
+export class DataIntegrationDataIndexModule {}

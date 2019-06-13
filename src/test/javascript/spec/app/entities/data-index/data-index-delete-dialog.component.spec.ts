@@ -4,7 +4,7 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { Observable, of } from 'rxjs';
 import { SimEventManager } from 'ng-simlife';
 
-import { DataIntergrationTestModule } from '../../../test.module';
+import { DataIntegrationTestModule } from '../../../test.module';
 import { DataIndexDeleteDialogComponent } from 'app/entities/data-index/data-index-delete-dialog.component';
 import { DataIndexService } from 'app/entities/data-index/data-index.service';
 
@@ -18,7 +18,7 @@ describe('Component Tests', () => {
 
         beforeEach(() => {
             TestBed.configureTestingModule({
-                imports: [DataIntergrationTestModule],
+                imports: [DataIntegrationTestModule],
                 declarations: [DataIndexDeleteDialogComponent]
             })
                 .overrideTemplate(DataIndexDeleteDialogComponent, '')

@@ -13,7 +13,7 @@ We use yarn scripts and [Webpack][] as our build system.
 
 ## Building for production
 
-To optimize the DataIntergration application for production, run:
+To optimize the DataIntegration application for production, run:
 
     ./mvnw -Pprod clean package
 

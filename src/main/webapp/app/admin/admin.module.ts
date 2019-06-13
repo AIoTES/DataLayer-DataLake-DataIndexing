@@ -1,6 +1,6 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { DataIntergrationSharedModule } from 'app/shared';
+import { DataIntegrationSharedModule } from 'app/shared';
 /* simlife-needle-add-admin-module-import - Simlife will add admin modules imports here */
 
 import {
@@ -21,7 +21,7 @@ import {
 
 @NgModule({
     imports: [
-        DataIntergrationSharedModule,
+        DataIntegrationSharedModule,
         RouterModule.forChild(adminState)
         /* simlife-needle-add-admin-module - Simlife will add admin modules here */
     ],
@@ -42,4 +42,4 @@ import {
     entryComponents: [UserMgmtDeleteDialogComponent, SimHealthModalComponent, SimMetricsMonitoringModalComponent],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class DataIntergrationAdminModule {}
+export class DataIntegrationAdminModule {}

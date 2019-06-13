@@ -1,16 +1,16 @@
 version: '2'
 services:
-    dataintergration-mongodb:
+    dataintegration-mongodb:
         image: mongo:3.6.3
         ports:
             - "27017:27017"
-        command: mongos --configdb dataintergration-mongodb-config
-    dataintergration-mongodb-node:
+        command: mongos --configdb dataintegration-mongodb-config
+    dataintegration-mongodb-node:
         build:
             context: .
             dockerfile: mongodb/MongoDB.Dockerfile
         command: mongod --replSet rs1 --noprealloc --smallfiles
-    dataintergration-mongodb-config:
+    dataintegration-mongodb-config:
         image: mongo:3.6.3
-        container_name: dataintergration-mongodb-config
+        container_name: dataintegration-mongodb-config
         command: mongod --noprealloc --smallfiles --configsvr --dbpath /data/db

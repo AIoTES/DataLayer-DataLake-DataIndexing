@@ -1,21 +1,21 @@
 version: '2'
 services:
-    dataintergration-app:
+    dataintegration-app:
         image: dl-data-indexing
         environment:
             # - _JAVA_OPTIONS=-Xmx512m -Xms256m
             - SPRING_PROFILES_ACTIVE=prod,swagger
-            - SPRING_DATA_MONGODB_URI=mongodb://dataintergration-mongodb:27017
-            - SPRING_DATA_MONGODB_DATABASE=DataIntergration
+            - SPRING_DATA_MONGODB_URI=mongodb://dataintegration-mongodb:27017
+            - SPRING_DATA_MONGODB_DATABASE=DataIntegration
             - SIMLIFE_SLEEP=10 # gives time for the database to boot before the application
-            - SPRING_DATA_ELASTICSEARCH_CLUSTER_NODES=dataintergration-elasticsearch:9300
+            - SPRING_DATA_ELASTICSEARCH_CLUSTER_NODES=dataintegration-elasticsearch:9300
         ports:
             - 8080:8080
-    dataintergration-mongodb:
+    dataintegration-mongodb:
         extends:
             file: mongodb.yml
-            service: dataintergration-mongodb
-    dataintergration-elasticsearch:
+            service: dataintegration-mongodb
+    dataintegration-elasticsearch:
         extends:
             file: elasticsearch.yml
-            service: dataintergration-elasticsearch
+            service: dataintegration-elasticsearch

@@ -1,8 +1,8 @@
 
 {
-  "name": "data-intergration",
+  "name": "data-integration",
   "version": "0.0.0",
-  "description": "Description for DataIntergration",
+  "description": "Description for DataIntegration",
   "private": true,
   "license": "UNLICENSED",
   "cacheDirectories": [

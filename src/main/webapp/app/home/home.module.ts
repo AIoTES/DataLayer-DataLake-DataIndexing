@@ -1,12 +1,12 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { DataIntergrationSharedModule } from 'app/shared';
+import { DataIntegrationSharedModule } from 'app/shared';
 import { HOME_ROUTE, HomeComponent } from './';
 
 @NgModule({
-    imports: [DataIntergrationSharedModule, RouterModule.forChild([HOME_ROUTE])],
+    imports: [DataIntegrationSharedModule, RouterModule.forChild([HOME_ROUTE])],
     declarations: [HomeComponent],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class DataIntergrationHomeModule {}
+export class DataIntegrationHomeModule {}

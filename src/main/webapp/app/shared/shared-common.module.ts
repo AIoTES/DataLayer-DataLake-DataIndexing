@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 
-import { DataIntergrationSharedLibsModule, SimAlertComponent, SimAlertErrorComponent } from './';
+import { DataIntegrationSharedLibsModule, SimAlertComponent, SimAlertErrorComponent } from './';
 
 @NgModule({
-    imports: [DataIntergrationSharedLibsModule],
+    imports: [DataIntegrationSharedLibsModule],
     declarations: [SimAlertComponent, SimAlertErrorComponent],
-    exports: [DataIntergrationSharedLibsModule, SimAlertComponent, SimAlertErrorComponent]
+    exports: [DataIntegrationSharedLibsModule, SimAlertComponent, SimAlertErrorComponent]
 })
-export class DataIntergrationSharedCommonModule {}
+export class DataIntegrationSharedCommonModule {}
