@@ -142,10 +142,10 @@
                     $urlDropdown.empty();
                     $.each(data, function(i, resource) {
                         var option = $('<option></option>')
-                        .attr("value", maybePrefix(resource.location, relativeLocation))
-                         .attr("value", maybePrefix('/api/docs', relativeLocation))
+                        //.attr("value", maybePrefix(resource.location, relativeLocation))
+                        .attr("value", maybePrefix('/api/docs', relativeLocation))
                         //.text(resource.name + " (" + resource.location + ")");
-                        //.text(resource.name + " (" + resource.location + ")");
+                        .text("default (" + maybePrefix('/api/docs', relativeLocation) + ")");
                         $urlDropdown.append(option);
                     });
                     $urlDropdown.change();
