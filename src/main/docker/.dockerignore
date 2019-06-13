@@ -10,5 +10,6 @@ surefire-reports/
 test-classes/
 test-results/
 www/
+!classes/apidocs.json
 !*.jar
 !*.war

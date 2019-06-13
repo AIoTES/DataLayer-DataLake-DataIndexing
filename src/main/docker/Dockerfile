@@ -6,15 +6,14 @@ ENV SPRING_OUTPUT_ANSI_ENABLED=ALWAYS \
 
 # Add a simlife user to run our application so that it doesn't need to run as root
 RUN adduser -D -s /bin/sh simlife
-WORKDIR /home/simlife
-
-ADD entrypoint.sh entrypoint.sh
-RUN chmod 755 entrypoint.sh && chown simlife:simlife entrypoint.sh
 USER simlife
 
-ADD *.war app.war
+WORKDIR /home/simlife
 
-ENTRYPOINT ["./entrypoint.sh"]
+COPY --chown=simlife classes/apidocs.json apidocs.json.orig
+COPY --chown=simlife entrypoint.sh entrypoint.sh
+COPY --chown=simlife *.war app.war
+
+ENTRYPOINT ["sh", "./entrypoint.sh"]
 
 EXPOSE 8080
-
