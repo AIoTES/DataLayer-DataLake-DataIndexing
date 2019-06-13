@@ -4,6 +4,7 @@ if [[ -n ${BASE_PATH} ]]; then
   sed "s|\(\"basePath\"\s*:\s*\"\)\(.*\)\(\"\)|\1${BASE_PATH}\2\3|g" \
     "${HOME}/apidocs.json.orig" > "${HOME}/apidocs.json"
   JAVA_OPTS="${JAVA_OPTS} -DdataIndexResource.apidocs=file:${HOME}/apidocs.json"
+  JAVA_OPTS="${JAVA_OPTS} -Dserver.servlet.contextPath=${BASE_PATH}"
   echo "Notice: BASE_PATH set to '${BASE_PATH}'"
 fi
 
