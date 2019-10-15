@@ -1,16 +1,17 @@
 version: '2'
 services:
     dataintegration-app:
-        image: dl-data-indexing
+        image: docker-activage.satrd.es/dl-data-indexing
+        container_name: dl-data-indexing-app
         environment:
             # - _JAVA_OPTIONS=-Xmx512m -Xms256m
             - SPRING_PROFILES_ACTIVE=prod,swagger
             - SPRING_DATA_MONGODB_URI=mongodb://dataintegration-mongodb:27017
-            - SPRING_DATA_MONGODB_DATABASE=DataIntegration
+            - SPRING_DATA_MONGODB_DATABASE=activage-data-integration
             - SIMLIFE_SLEEP=10 # gives time for the database to boot before the application
             - SPRING_DATA_ELASTICSEARCH_CLUSTER_NODES=dataintegration-elasticsearch:9300
         ports:
-            - 8080:8080
+            - 4580:8080
     dataintegration-mongodb:
         extends:
             file: mongodb.yml
