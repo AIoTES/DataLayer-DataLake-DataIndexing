@@ -1,7 +1,17 @@
 version: '2'
 services:
     dataintegration-elasticsearch:
-        image: elasticsearch:5.6.5
+        image: elasticsearch:5.5.0
+        container_name: di_elasticsearch
+        environment:
+            - node.name=di_elasticsearch
+            - cluster.name=docker-cluster
+            - cluster.initial_master_nodes=di_elasticsearch
+            - bootstrap.memory_lock=true
+            - "ES_JAVA_OPTS=-Xms256M -Xmx256M"
+            - http.cors.enabled=true
+            - http.cors.allow-origin=*
+            - network.host=_eth0_
         volumes:
             - ~/volumes/simlife/DataIntegration/elasticsearch/:/usr/share/elasticsearch/data/
         ports:
