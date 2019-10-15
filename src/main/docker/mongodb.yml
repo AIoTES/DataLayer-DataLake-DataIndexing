@@ -1,8 +1,12 @@
 version: '2'
 services:
     dataintegration-mongodb:
-        image: mongo:3.6.3
+        image: mongo
+        container_name: di_mongo
+        environment:
+            - "ES_JAVA_OPTS=-Xms256M -Xmx256M"
+            - http.cors.enabled=true
+            - http.cors.allow-origin=*
+            - network.host=_eth0_
         ports:
             - "27017:27017"
-        volumes:
-            - ~/volumes/simlife/DataIntegration/mongodb/:/data/db/
