@@ -36,8 +36,28 @@ To launch your application's tests, run:
 
 ## Using Docker to simplify development (optional)
 
+First build the data indexing component using the following command:
 
-For example, to start a mongodb database in a docker container, run:
+    ./mvnw -DskipTests=true -Pprod clean package
+
+Second step is to build docker image. To build docker image, run the following command:
+
+    docker build --no-cache -t docker-activage.satrd.es/dl-data-indexing target
+	
+Third step is to push docker image to the activage docker registry (docker-activage.satrd.es). Use the following command:
+
+    docker push docker-activage.satrd.es/dl-data-indexing
+
+Last step is to run the docker image using the following command. For this step you will need `docker-env` file available in [src/main/docker](src/main/docker). Below command should be run from the directory where the `docker-env` file exists.
+
+    docker-compose -f src/main/docker/app.yml up -d
+
+The Data Indexing can be accessed using the following URL:
+
+[http://localhost:4580/#/admin/docs](http://localhost:4580/#/admin/docs)
+
+
+<!--- For example, to start a mongodb database in a docker container, run:
 
     docker-compose -f src/main/docker/mongodb.yml up -d
 
@@ -53,3 +73,4 @@ To achieve this, first build a docker image of your app by running:
 Then run:
 
     docker-compose -f src/main/docker/app.yml up -d
+    -->
