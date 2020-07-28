@@ -1,4 +1,4 @@
-# DL-Data_Indexing
+# Data Indexing
 
 ## Development
 
