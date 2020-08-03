@@ -54,6 +54,20 @@ Last step is to push docker image to the activage docker registry (docker-activa
 
     docker push docker-activage.satrd.es/dl-data-indexing
 
+### Docker Deployment
+
+To run the docker image:
+
+`docker-compose -f app.yml up -d`
+
+Then open below link in browser:
+
+[http://localhost:4580/#/admin/docs](http://localhost:4580/#/admin/docs)
+
+To stop the docker container:
+
+`docker-compose -f app.yml down`
+
 ## Testing
 
 To launch your application's tests, run:
