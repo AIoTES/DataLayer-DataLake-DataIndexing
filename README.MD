@@ -1,5 +1,8 @@
 # Data Indexing
 
+The data indexing component, as the name suggests, is used to manage index of the distributed ACTIVAGE data. 
+The constructed indexes of the ACTIVAGE project allow for both temporal and modal searches. The operations implemented 
+in this component are create, delete, get and update indexes on ACTIVAGE data.
 
 ## Getting started / Use
 
