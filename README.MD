@@ -41,7 +41,7 @@ First build the data indexing component using the following command:
 
 Second step is to build docker image. To build docker image, run the following command:
 
-    docker build --no-cache -t docker-activage.satrd.es/dl-data-indexing target
+    docker build --no-cache -t aiotesdocker/datalayer-datalake-dataindexing target
     
 
 Third step is to run the docker image using the following command. For this step you will need `app.yml` file and its associated files (i.e. mongodb.yml and elasticsearch.yml), available in [src/main/docker](src/main/docker).
@@ -53,11 +53,11 @@ The Data Indexing can be accessed using the following URL:
 [http://localhost:4580/#/admin/docs](http://localhost:4580/#/admin/docs)
 
 
-Last step is to push docker image to the activage docker registry (docker-activage.satrd.es), if everything works fine. Use the following command:
-
-    docker push docker-activage.satrd.es/dl-data-indexing
 
 ### Docker Deployment
+
+[Available Docker images](https://hub.docker.com/r/aiotesdocker/datalayer-datalake-dataindexing)
+
 
 To run the docker image:
 
@@ -81,9 +81,9 @@ To launch your application's tests, run:
 
 Further information can be found in below links:
 
-* [Data Indexing APIs](https://git.activageproject.eu/Data_Analytics/DataIndexing/wiki/+Data+Integration+Engine+API)
+* [Data Indexing APIs](https://github.com/AIoTES/DataLayer-DataLake-DataIndexing/wiki/-Data-Integration-Engine-API)
 
-* [Data Indexing Wiki](https://git.activageproject.eu/Data_Analytics/DataIndexing/wiki/_pages)
+* [Data Indexing Wiki](https://github.com/AIoTES/DataLayer-DataLake-DataIndexing/wiki)
 
 ## License
     
