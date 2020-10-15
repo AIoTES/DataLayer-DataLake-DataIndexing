@@ -9,7 +9,7 @@ in this component are create, delete, get and update indexes on ACTIVAGE data.
 The Data Indexing component is deployed as a part of AIOTES Data Lake. This component has a pre-configured docker image which will be deployed 
 on your machine on port 4580. The full list of APIs which can be consumed by other components and their descriptions 
 can be found in the below link:
-* [Data Indexing APIs](https://git.activageproject.eu/Data_Analytics/DataIndexing/wiki/+Data+Integration+Engine+API)
+* [Data Indexing APIs](https://github.com/AIoTES/DataLayer-DataLake-DataIndexing/wiki/-Data-Integration-Engine-API)
 
 ## How to build, install, or deploy it
 
